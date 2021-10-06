@@ -94,6 +94,7 @@ func main() {
 		n++
 	}
 	fmt.Println(n) // 0
+}
 ```
 
 This is because the statement ``n := 1`` declares a new variables ``n`` shadowing the original one in the scope of the if statement. If we need to reuse ``n`` from outer block, we should write the following instead.
@@ -106,4 +107,5 @@ func main() {
 		n++
 	}
 	fmt.Println(n) // 2
+}
 ```
